@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--<link rel="stylesheet" href="" />-->
+        <title>SwitchBoard</title>
+        <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            font-family: -apple-system,
+                            BlinkMacSystemFont,
+                            "Segoe UI",
+                            "Roboto",
+                            "Oxygen",
+                            "Ubuntu",
+                            "Cantarell",
+                            "Fira Sans",
+                            "Droid Sans",
+                            "Helvetica Neue",
+                            sans-serif;
+            font-weight: 100;
+            margin: 0;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        .wrapper {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        .main {
+            display: table-row;
+
+        }
+        .apps-list {
+            display: table-cell;
+            list-style: none;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 0;
+            vertical-align: middle;
+        }
+        .apps-list__item {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border: 1px solid #c2c2c2;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .apps-list__link {
+            overflow: hidden;
+            text-align: center;
+            text-decoration: none;
+            color: #222;
+            text-overflow: ellipsis;
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 200px; /* remove */
+        }
+        .apps-list__icon {
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+        <main class="main">
+            <ul class="apps-list">
+                <li class="apps-list__item">
+                    <a href="https://accounts.nintendo.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Nintendo Account
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://google.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Google
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://youtube.com/tv" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Youtube
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://twitch.tv" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Twitch
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://reddit.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Reddit
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://mobile.twitter.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Twitter
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://mobile.facebook.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Facebook
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://instagram.com/" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Instagram
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://play.spotify.com/" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Spotify
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://web.whatsapp.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://messenger.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Messenger
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://hangouts.google.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Hangouts
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://web.skype.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Skype
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://www.amazon.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        Amazon
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://ebay.com" class="apps-list__link">
+                        <img src="" class="apps-list__icon" />
+                        eBay
+                    </a>
+                </li>
+            </ul>
+        </main>
+        </div>
+    </body>
+</html>
