@@ -28,6 +28,8 @@
             -moz-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
+            overflow-x: scroll; /* has to be scroll, not auto */
+            -webkit-overflow-scrolling: touch;
         }
         .wrapper {
             display: table;
@@ -42,7 +44,6 @@
         .apps-list {
             display: table-cell;
             list-style: none;
-            overflow: auto;
             white-space: nowrap;
             padding: 0;
             vertical-align: middle;
