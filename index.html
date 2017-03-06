@@ -13,16 +13,16 @@
         }
         body {
             font-family: -apple-system,
-                            BlinkMacSystemFont,
-                            "Segoe UI",
-                            "Roboto",
-                            "Oxygen",
-                            "Ubuntu",
-                            "Cantarell",
-                            "Fira Sans",
-                            "Droid Sans",
-                            "Helvetica Neue",
-                            sans-serif;
+                        BlinkMacSystemFont,
+                        "Segoe UI",
+                        "Roboto",
+                        "Oxygen",
+                        "Ubuntu",
+                        "Cantarell",
+                        "Fira Sans",
+                        "Droid Sans",
+                        "Helvetica Neue",
+                        sans-serif;
             font-weight: 100;
             margin: 0;
             -moz-text-size-adjust: 100%;
@@ -54,6 +54,7 @@
             border: 1px solid #c2c2c2;
             vertical-align: middle;
             margin-left: 10px;
+            position: relative;
         }
         .apps-list__link {
             overflow: hidden;
@@ -67,106 +68,119 @@
             line-height: 200px; /* remove */
         }
         .apps-list__icon {
-            display: none;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+        }
+        .apps-list__icon--nintendo-account {
+            background-color: #E60012;
+            background-image: url('icons/nintendo.svg');
+        }
+        .apps-list__icon--twitch {
+            background-color: #fff;
+            background-image: url('icons/twitch.svg');
         }
         </style>
     </head>
     <body>
         <div class="wrapper">
-            <main class="main">
-                <ul class="apps-list">
-                    <li class="apps-list__item">
-                        <a href="https://accounts.nintendo.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Nintendo Account
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://google.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Google
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://youtube.com/tv" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Youtube
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://twitch.tv" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Twitch
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://reddit.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Reddit
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://mobile.twitter.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Twitter
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://mobile.facebook.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Facebook
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://instagram.com/" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Instagram
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://play.spotify.com/" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Spotify
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://web.whatsapp.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Whatsapp
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://messenger.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Messenger
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://hangouts.google.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Hangouts
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://web.skype.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Skype
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://www.amazon.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            Amazon
-                        </a>
-                    </li>
-                    <li class="apps-list__item">
-                        <a href="https://ebay.com" class="apps-list__link">
-                            <img src="" class="apps-list__icon" />
-                            eBay
-                        </a>
-                    </li>
-                </ul>
-            </main>
+        <main class="main">
+            <ul class="apps-list">
+                <li class="apps-list__item">
+                    <a href="https://accounts.nintendo.com" class="apps-list__link">
+                        <span src="icons/nintendo.svg" class="apps-list__icon apps-list__icon--nintendo-account"></span>
+                        Nintendo Account
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://google.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Google
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://youtube.com/tv" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Youtube
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://twitch.tv" class="apps-list__link">
+                        <span src="icons/twitch.svg" class="apps-list__icon apps-list__icon--twitch"></span>
+                        Twitch
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://reddit.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Reddit
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://mobile.twitter.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Twitter
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://mobile.facebook.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Facebook
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://instagram.com/" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Instagram
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://play.spotify.com/" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Spotify
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://web.whatsapp.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://messenger.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Messenger
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://hangouts.google.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Hangouts
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://web.skype.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Skype
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://www.amazon.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        Amazon
+                    </a>
+                </li>
+                <li class="apps-list__item">
+                    <a href="https://ebay.com" class="apps-list__link">
+                        <span src="" class="apps-list__icon"></span>
+                        eBay
+                    </a>
+                </li>
+            </ul>
+        </main>
         </div>
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
