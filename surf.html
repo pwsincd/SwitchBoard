@@ -122,7 +122,8 @@
         </div>
         <script>
             function navigate(event) {
-                var url = document.getElementById('url').value;
+                var url = document.getElementById('url').value.replace(/\s/g,'');
+
                 if (url.indexOf('.') === -1 ) {
                     // no domain so just use google
                     return;
@@ -134,6 +135,7 @@
                     }
                     document.getElementById('webview').src = url;
                     document.getElementById('external-link').href = url;
+                    document.getElementById('url').value = url;
                 }
             }
         </script>
