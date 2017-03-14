@@ -229,7 +229,7 @@
                     </a>
                 </li>
                 <li class="apps-list__item">
-                    <a href="" data-href="https://www.google.com/url?q=https://youtube.com/tv" onclick="window.top.location.href=this.dataset.href" class="apps-list__link">
+                    <a href="" data-href="https://www.google.com/url?q=https://youtube.com/tv" onclick="this.href=this.dataset.href; this.click();" target="_top" class="apps-list__link">
                         <span src="" class="apps-list__icon apps-list__icon--youtube"></span>
                         YouTube
                     </a>
