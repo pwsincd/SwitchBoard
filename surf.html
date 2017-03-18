@@ -132,7 +132,7 @@
                     event.preventDefault();
                     // no protocol specified so lets add one
                     if (url.substr(0,4).indexOf('http') === -1) {
-                        url = 'https://' + url;
+                        url = 'http://' + url;
                     }
                     document.getElementById('webview').src = url;
                     document.getElementById('external-link').href = url;
