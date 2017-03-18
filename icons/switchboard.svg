@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="358px" height="358px" viewBox="0 0 358 358" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>switchboard logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(179.303658, 179.302354) rotate(45.000000) translate(-179.303658, -179.302354) translate(70.303658, 66.302354)">
+            <rect id="Rectangle" stroke="#E70012" stroke-width="30" x="-1.56319402e-13" y="0.912737008" width="143.623288" height="150.174526" rx="23"></rect>
+            <rect id="Rectangle" stroke="#E70012" stroke-width="30" x="73.6196987" y="75.7329137" width="143.623288" height="150.174526" rx="23"></rect>
+            <path d="M111.619699,127.732914 L60.6196987,127.732914" id="Line" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square"></path>
+            <path d="M99.7134487,173.732914 L48.7134487,173.732914" id="Line" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square"></path>
+            <path d="M154,53 L103,53" id="Line" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square"></path>
+            <path d="M158,99 L107,99" id="Line" stroke="#FFFFFF" stroke-width="16" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
