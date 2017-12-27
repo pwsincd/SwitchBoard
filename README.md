@@ -1,4 +1,4 @@
-# SwitchBoard
-A web dashboard designed for the Nintendo Switch
+fork of SwitchBoard
 
-http://switchboard.cool
+currently not hosted....  WIP
+
